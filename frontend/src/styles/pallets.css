@@ -1,0 +1,45 @@
+.pallets-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pallets-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.badge-open {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-received {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pallet-form-card {
+  max-width: 700px;
+}
+
+.pallet-item-form {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.pallet-item-form select {
+  flex: 1;
+}
+
+.pallet-item-form input {
+  width: 180px;
+}
+
+.locked-text {
+  color: #6b7280;
+  font-weight: 600;
+}
