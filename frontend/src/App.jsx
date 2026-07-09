@@ -7,6 +7,9 @@ import Items from "./pages/Items";
 import Pallets from "./pages/Pallets";
 import PalletDetails from "./pages/PalletDetails";
 import Inventory from "./pages/Inventory";
+import Suppliers from "./pages/Suppliers";
+import PurchaseOrders from "./pages/PurchaseOrders";
+import GoodsReceipts from "./pages/GoodsReceipts";
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
             <Route path="/pallets" element={<Pallets />} />
             <Route path="/pallets/:id" element={<PalletDetails />} />
             <Route path="/inventory" element={<Inventory />} />
+            <Route path="/suppliers" element={<Suppliers />} />
+            <Route path="/purchase-orders" element={<PurchaseOrders />} />
+            <Route path="/goods-receipts" element={<GoodsReceipts />} />
           </Routes>
         </div>
       </div>

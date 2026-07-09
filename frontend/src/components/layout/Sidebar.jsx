@@ -5,7 +5,7 @@ function Sidebar() {
     <aside className="sidebar">
       <div className="sidebar-logo">
         <h2>Anzo IMS</h2>
-        <p>Inventory System</p>
+        <p>Inventory & Procurement</p>
       </div>
 
       <nav className="sidebar-nav">
@@ -23,6 +23,18 @@ function Sidebar() {
 
         <NavLink to="/inventory" className="sidebar-link">
           Inventory
+        </NavLink>
+
+        <NavLink to="/suppliers" className="sidebar-link">
+          Suppliers
+        </NavLink>
+
+        <NavLink to="/purchase-orders" className="sidebar-link">
+          Purchase Orders
+        </NavLink>
+
+        <NavLink to="/goods-receipts" className="sidebar-link">
+          Goods Receipts
         </NavLink>
       </nav>
     </aside>

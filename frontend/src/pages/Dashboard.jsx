@@ -9,6 +9,9 @@ function Dashboard() {
     totalItems: 0,
     totalPallets: 0,
     currentStock: 0,
+    totalSuppliers: 0,
+    totalPurchaseOrders: 0,
+    pendingReceipts: 0,
     recentTransactions: [],
   });
 
@@ -33,13 +36,22 @@ function Dashboard() {
     <div className="dashboard-page">
       <div className="page-header">
         <h2>Dashboard</h2>
-        <p>Overview of items, pallets, stock and recent movements.</p>
+        <p>Overview of inventory, procurement, and recent stock movements.</p>
       </div>
 
       <div className="stats-grid">
         <SummaryCard title="Total Items" value={summary.totalItems} />
         <SummaryCard title="Total Pallets" value={summary.totalPallets} />
         <SummaryCard title="Current Stock" value={summary.currentStock} />
+        <SummaryCard title="Suppliers" value={summary.totalSuppliers} />
+        <SummaryCard
+          title="Purchase Orders"
+          value={summary.totalPurchaseOrders}
+        />
+        <SummaryCard
+          title="Pending Receipts"
+          value={summary.pendingReceipts}
+        />
       </div>
 
       <div className="dashboard-table-card">
