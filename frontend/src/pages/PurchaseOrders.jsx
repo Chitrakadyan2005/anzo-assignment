@@ -196,13 +196,6 @@ function PurchaseOrders() {
                   }
                 />
 
-                <button
-                  type="button"
-                  className="remove-btn"
-                  onClick={() => removeItemRow(index)}
-                >
-                  Remove
-                </button>
               </div>
             ))}
           </div>
